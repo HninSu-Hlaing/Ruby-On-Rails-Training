@@ -1,0 +1,8 @@
+<h1>Tuto-9</h1>
+<%= form_with url:tuto9_path do |f| %>
+<%= f.label :image %>:
+<%= f.file_field 'image' %>
+<%= f.label :folder %>: 
+<%= f.text_field 'folder' %>
+  <%= f.submit 'Save' %>
+ <% end %>
