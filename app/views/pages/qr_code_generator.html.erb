@@ -1,0 +1,7 @@
+<h1>QR code generator</h1>
+
+<%= form_tag :qr_code_download, method: :get do |f| %>
+    <%= label_tag 'Id' %>
+    <%= text_field_tag :content, nil, required: true %>
+    <%= submit_tag 'Generate QR code' %>
+<% end %>
