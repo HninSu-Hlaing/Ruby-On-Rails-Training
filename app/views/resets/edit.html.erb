@@ -1,0 +1,7 @@
+<h1>Reset your password?</h1>
+<%= form_with model:@user, url:reset_edit_path(token:params[:token]) do |form| %>
+<h4>Enter new password:</h4>
+<%= form.label :password %>:
+<%= form.password_field :password, class: "form-control" %>
+<%= form.submit "Submit" %>
+<%end%>
