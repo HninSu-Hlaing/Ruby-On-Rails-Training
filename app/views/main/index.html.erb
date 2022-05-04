@@ -1,5 +1,5 @@
-<h1>Welcome</h1>
+<h1>Welcome User!</h1>
 <% if @user %>
-Logged in as:<%= @user.username %>
+Logged in as:<%= @user.email %>
 <%= button_to "Log out",logout_path, method: :delete %>
 <%end%>
